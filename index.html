@@ -1,79 +1,35 @@
 <!DOCTYPE html>
-<html>
-<head lang="uk">
+<html lang="uk">
+<head>
     <meta charset="UTF-8">
     <title>My Page</title>
-
-
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 
 <body>
-
     <div class="container">
         
         <div class="left-panel">
             <div class="add-item-form">
-                <input type="text" placeholder="Назва товару">
-                <button class="btn-add">Додати</button>
+                <input type="text" id="new-item-name" placeholder="Назва товару">
+                <button class="btn-add" id="btn-add">Додати</button>
             </div>
 
-            <ul class="product-list">
-                <li class="product-item">
-                    <span class="product-name">Помідори</span>
-                    <div class="controls">
-                        <button class="btn-minus" data-tooltip="Зменшити">-</button>
-                        <span class="amount">1</span>
-                        <button class="btn-plus" data-tooltip="Збільшити">+</button>
-                    </div>
-                    <div class="actions">
-                        <button class="btn-bought" data-tooltip="Відмітити як куплене">Куплено</button>
-                        <button class="btn-delete" data-tooltip="Видалити товар">✖</button>
-                    </div>
-                </li>
-
-                <li class="product-item">
-                    <span class="product-name">Печиво</span>
-                    <div class="controls">
-                        <button class="btn-minus" data-tooltip="Зменшити">-</button>
-                        <span class="amount">1</span>
-                        <button class="btn-plus" data-tooltip="Збільшити">+</button>
-                    </div>
-                    <div class="actions">
-                        <button class="btn-bought" data-tooltip="Відмітити як куплене">Куплено</button>
-                        <button class="btn-delete" data-tooltip="Видалити товар">✖</button>
-                    </div>
-                </li>
-
-                <li class="product-item">
-                    <span class="product-name">Сир</span>
-                    <div class="controls">
-                        <button class="btn-minus" data-tooltip="Зменшити">-</button>
-                        <span class="amount">1</span>
-                        <button class="btn-plus" data-tooltip="Збільшити">+</button>
-                    </div>
-                    <div class="actions">
-                        <button class="btn-bought" data-tooltip="Відмітити як куплене">Куплено</button>
-                        <button class="btn-delete" data-tooltip="Видалити товар">✖</button>
-                    </div>
-                </li>
+            <ul class="product-list" id="product-list">
             </ul>
         </div>
 
         <div class="right-panel">
             <div class="stats-card">
                 <h3>Залишилося</h3>
-                <div class="tags">
-                    <span class="tag">Помідори</span>
-                    <span class="tag">Печиво</span>
-                    <span class="tag">Сир</span>
+                <div class="tags" id="left-to-buy">
                 </div>
             </div>
             
             <div class="stats-card">
                 <h3>Куплено</h3>
-                <div class="tags">
-                    </div>
+                <div class="tags" id="already-bought">
+                </div>
             </div>
         </div>
 
@@ -84,5 +40,6 @@
         <span class="badge-name">Created by:<br>Tykhonovski Yehor</span>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>

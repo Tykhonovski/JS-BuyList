@@ -218,3 +218,28 @@ body {
         font-weight: bold;
     }
 }
+
+.product-item.is-bought .product-name {
+    text-decoration: line-through;
+    color: #999;
+}
+.product-item.is-bought .controls,
+.product-item.is-bought .btn-delete {
+    display: none; 
+}
+
+.btn-bought.active {
+    background-color: #bdc3c7;
+    color: #fff;
+    border-color: #bdc3c7;
+}
+
+.edit-input {
+    flex-grow: 1;
+    font-size: 18px;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #3498db;
+    border-radius: 3px;
+    font-family: inherit;
+}
